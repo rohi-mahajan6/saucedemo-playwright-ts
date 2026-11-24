@@ -38,8 +38,10 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Install ${{ matrix.project }} browser
-        run: npx playwright install --with-deps ${{ matrix.project }}
+      # The setup project (login + storageState) runs on Playwright's default browser,
+      # Chromium, so it is installed alongside the matrix browser in every job.
+      - name: Install ${{ matrix.project }} browser (+ chromium for setup)
+        run: npx playwright install --with-deps chromium ${{ matrix.project }}
 
       - name: Run tests
         run: npx playwright test --project=${{ matrix.project }}
