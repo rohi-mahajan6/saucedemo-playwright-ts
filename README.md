@@ -2,10 +2,8 @@
 
 End-to-end test framework for an e-commerce checkout, covering six seeded user personas across Chromium, Firefox and WebKit, with seeded defects tracked as expected failures.
 
-<!-- Replace <user> once the repository exists on GitHub. -->
-
-[![E2E](https://github.com/<user>/saucedemo-playwright-ts/actions/workflows/e2e.yml/badge.svg)](https://github.com/<user>/saucedemo-playwright-ts/actions/workflows/e2e.yml)
-[![Report](https://img.shields.io/badge/report-live-brightgreen)](https://<user>.github.io/saucedemo-playwright-ts/)
+[![E2E](https://github.com/rohi-mahajan6/saucedemo-playwright-ts/actions/workflows/e2e.yml/badge.svg)](https://github.com/rohi-mahajan6/saucedemo-playwright-ts/actions/workflows/e2e.yml)
+[![Report](https://img.shields.io/badge/report-live-brightgreen)](https://rohi-mahajan6.github.io/saucedemo-playwright-ts/)
 
 > ⚠️ The target app is a **public third-party demo** ([SauceDemo](https://www.saucedemo.com)) used for practice. This project is not affiliated with Sauce Labs. No load testing is run against the public site.
 
@@ -114,7 +112,7 @@ The four defect tests above are in `tests/personas/problem-user.spec.ts`.
 Requires Node.js 20 or newer.
 
 ```bash
-git clone https://github.com/<user>/saucedemo-playwright-ts.git
+git clone https://github.com/rohi-mahajan6/saucedemo-playwright-ts.git
 cd saucedemo-playwright-ts
 npm ci
 npx playwright install
