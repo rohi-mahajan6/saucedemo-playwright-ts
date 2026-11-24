@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Secrets and local config
+.env
+.env.*
+!.env.example
+
+# Playwright output
+playwright-report/
+test-results/
+blob-report/
+all-blob-reports/
+reports/
+.auth/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
