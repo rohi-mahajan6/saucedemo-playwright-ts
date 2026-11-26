@@ -80,17 +80,17 @@ All three browsers passed. The 12 known-defect runs (4 tests × 3 browsers) fail
 
 **CI runs on GitHub Actions** (one job per browser, then the merged report and the Pages deploy):
 
-| Run | Trigger | Commit | Result |
-| --- | ------- | ------ | ------ |
-| [45580766433](https://github.com/rohi-mahajan6/saucedemo-playwright-ts/actions/runs/45580766433) | daily schedule, 2026-11-25 | `63aae34` | Chromium, Firefox and WebKit jobs passed; report merged and deployed |
-| [45358006031](https://github.com/rohi-mahajan6/saucedemo-playwright-ts/actions/runs/45358006031) | push, 2026-11-24 | `63aae34` | Chromium, Firefox and WebKit jobs passed; report merged and deployed |
-| [45357659687](https://github.com/rohi-mahajan6/saucedemo-playwright-ts/actions/runs/45357659687) | push, 2026-11-24 | `8493ccf` | Chromium passed; Firefox and WebKit failed. The login setup project runs on Chromium, which those jobs had not installed. Fixed in `63aae34` by installing Chromium in every matrix job. |
+| Run                                                                                              | Trigger                    | Commit    | Result                                                                                                                                                                                   |
+| ------------------------------------------------------------------------------------------------ | -------------------------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [45580766433](https://github.com/rohi-mahajan6/saucedemo-playwright-ts/actions/runs/45580766433) | daily schedule, 2026-11-25 | `63aae34` | Chromium, Firefox and WebKit jobs passed; report merged and deployed                                                                                                                     |
+| [45358006031](https://github.com/rohi-mahajan6/saucedemo-playwright-ts/actions/runs/45358006031) | push, 2026-11-24           | `63aae34` | Chromium, Firefox and WebKit jobs passed; report merged and deployed                                                                                                                     |
+| [45357659687](https://github.com/rohi-mahajan6/saucedemo-playwright-ts/actions/runs/45357659687) | push, 2026-11-24           | `8493ccf` | Chromium passed; Firefox and WebKit failed. The login setup project runs on Chromium, which those jobs had not installed. Fixed in `63aae34` by installing Chromium in every matrix job. |
 
-| Evidence              | Link                                                                                              |
-| --------------------- | ------------------------------------------------------------------------------------------------- |
+| Evidence              | Link                                                                                                        |
+| --------------------- | ----------------------------------------------------------------------------------------------------------- |
 | Live HTML report      | [rohi-mahajan6.github.io/saucedemo-playwright-ts](https://rohi-mahajan6.github.io/saucedemo-playwright-ts/) |
-| Scheduled runs (cron) | `30 0 * * *` UTC = 06:00 IST                                                                      |
-| Run history           | [Actions](https://github.com/rohi-mahajan6/saucedemo-playwright-ts/actions/workflows/e2e.yml)     |
+| Scheduled runs (cron) | `30 0 * * *` UTC = 06:00 IST                                                                                |
+| Run history           | [Actions](https://github.com/rohi-mahajan6/saucedemo-playwright-ts/actions/workflows/e2e.yml)               |
 
 ## 7. Known defects / findings
 
